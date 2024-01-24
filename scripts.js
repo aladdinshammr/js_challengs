@@ -2711,4 +2711,439 @@ console.log(set.size);
 // 4
 
 // Answer = 3
+
+// 261- What is the output of this code:
+var num = (5.489).toFixed(2);
+console.log(num);
+
+// Answer = 5.49
+
+
+// 262- What is the output of this code:
+var a = 22;
+a %= 5;
+a *= 6;
+a += 7;
+
+alert(a);
+
+// answer = 19
+
+// 263- What is the output of this code:
+var a = {
+  a: 3,
+  b: function () {
+    return this.a + 2;
+  },
+  c: function () {
+    return this.b() + 6;
+  },
+};
+
+alert(a.c());
+
+// Answer = 11
+
+
+
+
+// 264- fill in the blanks to output
+//"I like programming in sololearn"
+
+var a = "like ";
+var b = "programming ";
+var c = "I ";
+var d = "Sololearn";
+var e = "on ";
+
+document.write(c + a + b + e + d);
+
+// 265: Which is a single line comment:
+// 1- <!-- -->
+// 2- //
+// 3- %%
+// 4- /*
+
+// Answer //
+
+
+// 266: What is the output of this code?
+var a = 100;
+var b = (a / 10) % 10;
+document.write(b);
+
+// 1- 1
+// 2- Error
+// 3- infinity
+// 4-0
+
+// Answer = 0
+
+// 267: What is the output of this code?
+var a = 5;
+var b = 6;
+if (b < a) {
+  alert(a % b);
+} else {
+  alert(b % a);
+}
+
+// Answer = 1
+
+// 268: What is the output of this code?
+let cities = ["madrid", "rio", "newyork"];
+let [city1, city2, city3] = cities;
+let info = `i love ${city2}`;
+
+console.log(info);
+
+// 1- i love newyourk
+// 2- i lobve rio
+// 3- `i love ${city2}`
+// 4- i love madrid
+
+// answer = i love rio
+
+// 269: What is the output of this code?
+// I think they need to rephrase this question
+
+(function (x) {
+  delete x;
+  return x;
+})(1);
+
+// 1- undefined
+// 2- Error
+// 3- null
+// 4- 1
+
+// Answer = 1
+
+// 270: What is the output of this code?
+function add(n1, n2) {
+  var sum = n1 + n2;
+  return;
+}
+
+function add1(n1, n2) {
+  var sum = n1 + n2;
+}
+
+add(2, 3);
+add1(2, 3);
+console.log(add() === add1());
+console.log(add === add1);
+
+// 1- false false
+// 2- false true
+// 3- true false
+// 4- true true
+
+// answer = true false
+// 271: What is the output of this code?
+var a = null == undefined;
+var b = null === undefined;
+var c = a + b;
+alert(c);
+
+// Answer = 1
+
+// 272: What is the output of this code?
+var x, y, Z;
+x = 4;
+y = 10;
+z = ((y % x) * 5) % 2;
+alert(z);
+
+// 1- 0
+// 2- 8
+// 3- 12
+
+// answer = 0
+// 273: What is the output of this code?
+var num = 300;
+if (num === 300) {
+  document.write("num");
+} else {
+  document.write("num--");
+}
+
+// Answer = num
+// 274: What is the output of this code?
+var a = "123" === 123;
+var b = "123" == 123;
+console.log(a !== b);
+
+// 1- False
+// 2- True
+// 3- true
+// 4- false
+
+// answer = true
+// 275: What is the output of this code?
+var nb = [8, 9, 24, 35, 40, 54];
+alert(nb[1] + nb[5]);
+
+// 1- 48
+// 2- 6
+// 3- 63
+// 840 
+
+// Answer = 63
+
+// 276: What will be alerted?
+var a = null;
+var b = 5;
+var c = a + b;
+alert(c);
+
+// 1- 5
+// 2- error 
+// 3- 10
+// 4- 1505
+
+// Answer = 5
+
+// 277: What is the output of this code?
+var foo = 1;
+var bar = function () {
+  console.log(foo);
+  var foo = 2;
+};
+bar();
+
+// 1- undefined
+// 2- error
+// 3- 2
+// 4- 1
+
+// Answer = undefined
+// 278: What is the output of this code?
+alert(8 * null);
+
+// 1 - error
+// 2- 8
+// 3- null
+// 4 - 0
+
+// Answer = 0
+// 279: What is the output of this code?
+var hello = 1
+if(hello != 1){
+  alert("Good")
+}else if(hello<=1){
+  alert("Well")
+}else if(hello == 1){
+  alert("Fine")
+}
+
+// 1- Well
+// 2- Good
+// 3- Fine
+
+// answer = Well
+// 280: What is the output of this code?
+y = 10;
+z = 7;
+x = ++y + (z % 5);
+alert(x);
+
+// 1- 15
+// 2- 14
+// 3-13
+// 4- 16
+
+// answer= 13
+// 281: What is the output of this code?
+var a = !(1 || 0) && (true || (null && "sololearn"));
+alert(a);
+
+// 1- true
+// 2- false
+// 3- undefined
+
+// Answer = false
+// 282: What is the output of this code?
+let arr = [1, 1, 5, 5, 6, 7, 6];
+let map = new Map([arr, arr]);
+console.log(map);
+console.log(map.size);
+
+// Answer = 1
+// 283: What is the output of this code?
+var str = "abc";
+var arr = [1, 2, 3];
+str.length = 2;
+arr.length = 2;
+console.log(str.length + arr.length);
+
+// Answer = 5
+// 284: What is the output of this code?
+var x = 2;
+for (var i = 0; i < 4; i++) {
+  x += 2;
+}
+document.write(x);
+
+// Answer = 10
+
+// 285: What will be alerted?
+function myFunc(str) {
+  var p = /\d+/g;
+  var res = str.match(p);
+  return res;
+}
+
+alert(myFunc("I have 28 years"));
+
+// 1- 28
+// 2- I have 28 years
+// 3 - I have years
+// none of the following
+
+// Answer = 28
+
+// 286: What is the output of this code?
+var a = 2;
+function set() {
+  var a = 5;
+}
+document.write(a);
+
+// Answer = 2
+// 287: What is the output of this code?
+var a = 4;
+alert(a % 5);
+
+// Answer = 4
+
+// 288: Is the output of the code 10?
+var num = Math.floor(Math.random() + 10);
+console.log(num);
+
+// 1- true
+// 2- false
+
+
+// 289: What is the output of this code?
+var a = "javascript";
+b = a.split(" ");
+console.log(typeof b);
+
+// 1- string
+// 2- object
+
+// Answer = object
+
+
+// 290: What is the output of this code?
+var arr = [2,3,4]
+var lit = `${...arr}`
+console.log(lit[0]);
+
+// 1- Error
+// 2- 2
+// 3- ${...arr}
+
+// Answer = Error
+// 291: What is the output of this code?
+function x() {
+  console.log(new.target ? 1 : 0);
+}
+new x();
+x();
+
+// 1 - 1 1
+// 2- 1 0
+// 3- 0 0
+// 4 - 0 1
+
+// Answer = 1 0
+
+
+// 292: fill in the blank to output "ok"
+
+alert(false ? func : "ok");
+
+// 293: What will be alerted
+const x = 15;
+for (let x = 0; x <= 10; x += 2) {
+  y = x;
+}
+alert(y);
+
+// answer = 10 and in strict mode error
+
+// 294: choose the ones that will output
+// false when alerted:
+
+// 1- Boolean(flase);
+// 2- Boolean("false");
+// 3- Boolean(0);
+// 4 -Boolean(undefined);
+
+// Answer = 1,3,4
+
+
+// 295: What is the output of this code:
+var arr = [];
+arr.push(30);
+arr.push(9);
+arr.push(2);
+alert((arr[0] % arr[1]) % arr[2]);
+
+// Answer = 1
+
+// 296: What is the output of this code:
+function add() {
+  return 2 + 3;
+}
+
+console.log(typeof add);
+
+// Answer = function
+
+// 297: What is the output of this code:
+var a = 6;
+var b = 3;
+var z = (a * ++b) / b;
+document.write(z);
+
+// Answer = 6
+
+// 298: What is the output of this code:
+let a;
+let b = null;
+let c = 4;
+let d = "five";
+let e = a || b || c || d;
+alert(e);
+
+// null
+// 4
+// undefined
+// five
+
+// Answer = 4
+
+// 299: What is the output of this code:
+var x = function (x) {
+  this.x = 4;
+  alert(x);
+};
+
+x(5);
+
+// Answer = 5
 */
+// 300: What is the output of this code:
+let a = 0,
+  b = 2;
+console.log(a++ && ++b);
+
+// 0
+// 1
+// 3
+// 2
+
+// Answer = 0
